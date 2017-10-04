@@ -1,7 +1,9 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    height: 100%;
     margin: 0;
     padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -24,5 +26,26 @@ body {
 }
 
 .content {
+    height: calc(100vh - 115px);
     padding: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-column {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    border: 1px solid gray;
+    margin: 12px;
+    padding: 12px;
+}
+
+.nasa-images {
+    flex-direction: column;
+}
+
+.nasa-image {
+    width: 100%;
+    height: auto;
 }
