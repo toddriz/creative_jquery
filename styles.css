@@ -35,17 +35,22 @@ body {
 .content-column {
     height: 100%;
     width: 50%;
-    display: flex;
     border: 1px solid gray;
     margin: 12px;
     padding: 12px;
 }
 
 .nasa-images {
+	display: flex;
     flex-direction: column;
 }
 
 .nasa-image {
     width: 100%;
     height: auto;
+}
+
+#searchArea {
+	display: flex;
+    justify-content: center;
 }
