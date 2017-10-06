@@ -9,7 +9,7 @@ $(document).ready(function () {
     $.getJSON(nasa_url, function (data) {
         $("#picTitle").text(data.title);
         $("#picDescription").text(data.explanation);
-        $("#nasa-image").css('background-image', 'url(' + data.hdurl + ')');
+        $("#nasa-image").css('background-image', 'url(' + data.hdurl + '), url(space.jpg)');
     });
 
 
