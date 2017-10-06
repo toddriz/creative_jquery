@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 		$.getJSON(food_url, (data) =>{
 			recipes = data["hits"];
-			recipe = recipes[0]["recipe"];
+			recipe = recipes[Math.floor(recipes.length * Math.random())]["recipe"];
 			$("#foodPic").attr("src", recipe["image"]);
 			$("#foodName").text(recipe["label"]);
 			$("#foodLink").attr("href", recipe["url"]);
