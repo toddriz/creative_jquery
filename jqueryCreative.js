@@ -7,20 +7,22 @@ $(document).ready(function () {
 	let recipes = [];
 
     $.getJSON(nasa_url, function (data) {
-        $("#nasa-image").attr("src", data.hdurl);
+        $("#picTitle").text(data.title);
+        $("#picDescription").text(data.explanation);
+        $("#nasa-image").css('background-image', 'url(' + data.hdurl + ')');
     });
-     
-	 
+
+
 	$("#foodButton").click( (e) => {
 		let food_url = "https://api.edamam.com/search?q=" + $("#food").val() + "&app_id=dd148576&app_key=4809208db76ce80ead19002f527a10ff";
-		
+
 		$.getJSON(food_url, (data) =>{
 			recipes = data["hits"];
 			recipe = recipes[0]["recipe"];
 			$("#foodPic").attr("src", recipe["image"]);
 			$("#foodName").text(recipe["label"]);
-			$("#foodLink").text(recipe["url"]);
 			$("#foodLink").attr("href", recipe["url"]);
+            $("#clickHint").text("Click the picture above to view the full recipie!");
 		});
 	});
 });
