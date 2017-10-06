@@ -6,51 +6,51 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #3f51b5;
-    color: #E7E7E7;
-    font-size: 22px;
-    padding: 12px;
-
+.navbar{
+    box-shadow: 0px 2px 36px #999;
 }
 
-.header-title {
-    display: flex;
+.hint, .jumbotron-heading{
+    color: white;
+    text-shadow: 0px 0px 5px #000;
 }
 
-.creatives {
-    display: flex;
+.jumbotron{
+    border-radius: 0px;
+    resize: vertical;
+    background-size: cover;
+    min-height: 400px;
+    margin-bottom: 0px;
+}
+.names{
+    font-size: 16px;
+}
+#picDescription{
+    text-align: left;
+}
+#picTitle, #foodName{
+    font-size: 18px;
+}
+#foodButton:hover{
+    cursor: pointer;
+}
+#foodPic{
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+.row{
+    margin: 0px !important;
+}
+.input-sm{
+    margin: 20px auto 10px auto;
 }
 
-.content {
-    height: calc(100vh - 115px);
-    padding: 12px;
-    display: flex;
-    justify-content: center;
+.info{
+    padding: 40px;
+    text-align: center;
 }
 
-.content-column {
-    height: 100%;
-    width: 50%;
-    border: 1px solid gray;
-    margin: 12px;
-    padding: 12px;
-}
-
-.nasa-images {
-	display: flex;
-    flex-direction: column;
-}
-
-.nasa-image {
-    width: 100%;
-    height: auto;
-}
-
-#searchArea {
-	display: flex;
-    justify-content: center;
+h2{
+    color: #343A40;
+    font-size: 1.5rem;
 }

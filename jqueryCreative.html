@@ -1,40 +1,64 @@
 <html>
 
 <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Creative, Super</title>
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    <script src="jqueryCreative.js"></script>
+
 
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-title">Creative, Super</div>
-        <div class="creatives">
-            Todd Risenmay | Amy Clawson | Andrew Tangren
+    <div class="navbar navbar-dark bg-dark justify-content-between">
+        <a href="#" class="navbar-brand">Creative, Super</a>
+        <span class="navbar-brand names">Todd Risenmay | Andrew Tangren | Amy Jeppson</span>
+    </div>
+
+    <section class="jumbotron text-center" id="nasa-image">
+      <div class="container">
+        <h1 class="jumbotron-heading">Get learned and get fed!</h1>
+        <div class="form-inline">
+        </div>
+        <input type="text" placeholder="What's in your fridge?" class="form-control input-sm col-sm-5" id="food">
+        <p class="hint">(Enter an ingredient you have and we'll suggest a recipie)</p>
+        <button id="foodButton" class="btn btn-default">Search</button>
+      </div>
+    </section>
+
+    <div class="row">
+        <div class="col-sm-6 info">
+            <h2>Get Learned: Nasa's Pic of the Day</h2><span id="picTitle"></span>
+            <hr>
+            <p id="picDescription"></p>
+        </div>
+        <div class="col-sm-6 info">
+            <h2>Get Fed: Suggeested Recipie</h2><span id="foodName">Search above!</span>
+            <hr>
+            <a id="foodLink" href="" target="_blank">
+                <img id="foodPic" src="">
+            </a>
+            <p id="clickHint"></p>
         </div>
     </div>
-    <div class="content">
-        <div class="content-column other">
-			<div id="searchArea">
-				<input id="food"></input>
-				<button id="foodButton">Search</button>
-			</div>
-			<div>
-				<img id="foodPic" src="">
-				<div id="foodName"></div>
-				<a id="foodLink" href="" target="_blank"></a>
-			</div>
-		</div>
-        <div class="content-column nasa-images">
-            <div>NASA Picture of the Day</div>
-            <img id="nasa-image" src="" alt="planet earth">
-        </div>
-    </div>
+
+    <!-- Bootstrap core JavaScript and other scripts:
+    ================================================== -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.4/holder.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="jqueryCreative.js"></script>
+
 </body>
 
 </html>
